@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Payment Interface</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+<div class="min-h-screen flex items-center justify-center">
+
+    <!-- Payment Card -->
+    <div class="max-w-md w-full bg-white rounded-lg shadow-lg overflow-hidden">
+        <!-- Card Header -->
+        <div class="bg-gray-800 text-white py-4 px-6">
+            <h2 class="text-xl font-semibold">UPI Payment</h2>
+            <p class="text-sm">Pay securely using UPI</p>
+        </div>
+
+        <!-- Payment Form -->
+        <form class="px-6 py-8 space-y-4">
+
+            <!-- UPI ID Input -->
+            <div class="flex items-center justify-between">
+                <div>
+                    <label for="upi-id" class="block text-sm font-medium text-gray-700">Enter UPI ID</label>
+                    <input id="upi-id" type="text" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="Your UPI ID">
+                    <p class="mt-2 text-sm text-gray-500">Make sure the UPI ID is correct before verifying.</p>
+                </div>
+                <!-- Verify Button for UPI ID -->
+                <button type="button" class="bg-gray-600 text-white px-2 py-1 rounded-md hover:bg-gray-700">Verify</button>
+            </div>
+
+            <!-- Amount Input -->
+            <div>
+                <label for="amount" class="block text-sm font-medium text-gray-700">Amount</label>
+                <input id="amount" type="number" value="100" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" readonly>
+                <p class="mt-2 text-sm text-gray-500">The amount is fixed and cannot be changed.</p>
+            </div>
+
+            <!-- Pay Button -->
+            <div>
+                <button type="submit" class="w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Pay Now</button>
+                <p class="mt-2 text-sm text-gray-500">By clicking "Pay Now", you agree to our <a href="#" class="underline">terms and conditions</a>.</p>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

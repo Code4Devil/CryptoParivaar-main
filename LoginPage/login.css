@@ -1,0 +1,470 @@
+@font-face {
+    font-family: montserrat;
+    src: url(/Internship1/CryptoParivaar-main/Montserrat-Black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color:#E4E0DD;
+    overflow: hidden;
+
+}
+
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login{
+
+    height: 75vh;
+    width: 65vw;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+}
+
+#nav{
+    height: 18%;
+    width: 100%;
+    position: absolute;
+    /* background-color: green; */
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+    font-family: montserrat;
+}
+
+#nav h2{
+    font-size: 1.5vw;
+}
+
+#nav a{
+    font-size: 1vw;
+}
+
+
+#loginleft{
+    /* background-color: red; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+    
+    font-family: montserrat;
+    padding: 3vw;
+    padding-top: 5vw;
+
+}
+
+#loginleft h1{
+    font-size: 2vw;
+}
+#loginleft h3{
+    font-size: 1.3vw;
+}
+
+.inputfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .2vw;
+}
+
+.inputfield p{
+    font-size: 1vw;
+    /* background-color: rgb(255, 0, 0); */
+}
+
+#loginleft input{
+    border: none;
+    height: 2.4vw;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(243, 243, 243);
+    padding: 0vw .4vw;
+}
+
+input::placeholder{
+    font-family: montserrat;
+}
+#checkbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: black; */
+    margin-left: -2vw;
+}
+
+#checkbox #leftcheck{
+    align-items: center;
+    display: flex;
+}
+#leftcheck h3{
+    width: 12vw;
+    /* background-color: red; */
+    margin-left:-2vw;
+}
+
+input[type=checkbox]
+{
+    scale: .6;
+}
+  
+
+
+
+
+#checkbox #leftcheck{
+    display: flex;
+}
+
+#checkbox h3{
+    font-size: .7vw
+}
+
+
+
+
+
+#buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7vw;
+    margin-bottom: -2vw;
+    /* background-color: blue; */
+    height: 25%;
+    width: 100%;
+    padding: 0vw;
+}
+
+#signupreference{
+    font-size: .7vw;
+}
+
+
+#loginbutton {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 70%;
+    background-color:#508648;
+}
+
+#googlebutton {
+    border-radius: 10px;
+    display: flex;
+    gap: .6vw;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 80%;
+    background-color: white;
+    border: 1px solid black;
+    
+}
+
+#googlebutton i{
+    font-size: 1.5vw;
+}
+
+#loginbutton a{
+    color: white;
+}
+
+#googlebutton a{
+    color: black;
+}
+
+#login a{
+    text-decoration: none;
+}
+
+#loginright{
+    background-color: blue;
+    height: 100%;
+    width: 50%;
+    background-image: url(https://imgs.search.brave.com/dppMMxrbFJSqt8qz4EE520pjvFQ8JtQED9l4YmHH0a8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZmlkZWxpdHkuY29t/L2Jpbi1wdWJsaWMv/MDYwX3d3d19maWRl/bGl0eV9jb20vaW1h/Z2VzL0xDL2luZm9n/cmFwaGljL2NyeXB0/b2N1cnJlbmN5LW1p/bmluZy5wbmc);
+    background-position-x: -15vw;
+    /* background-position-y: 2vw; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+#rightbuttons {
+    display: flex;
+    gap: 1vw;
+}
+
+#rightbuttons a{
+   color: white;
+}
+
+
+
+@media(max-width:620px){
+    #login{
+        flex-direction: column-reverse;
+        width: 90%;
+        height:75%;
+
+    }
+    #loginright{
+        width: 100%;
+        background-size: cover;
+        background-position: 0px;
+        /* background-position-y: 2vh; */
+        height: 50%;
+
+    }
+    #loginleft{
+        width: 100%;
+        padding: 4vh;
+        gap: .5vh;
+        justify-content: start;
+    }
+    #loginleft h1{
+        font-size: 2vh;
+    }
+    .inputfield{
+        height: 7vh;
+    }
+    
+
+    #buttons{
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    #signupreference{
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.4vh;
+        text-align: center;
+
+    }
+
+    #nav{
+        position: absolute;
+        top: 0;
+        padding: 0vh 3vh;
+    }
+
+    #nav h2{
+        font-size: 1.5vh;
+    }
+
+    #rightbuttons{
+        gap: 1.3vh;
+    }
+
+    #nav a{
+        font-size: 1vh;
+        
+    }
+    #buttons{
+        width: 100%;
+    }
+
+
+    #loginleft input{
+        height: 6vh;
+
+    }
+
+    .inputfield p{
+        font-size: 2vh;
+    }
+
+   #leftcheck{
+    position: relative;
+    left: 3%;
+   }
+
+    #leftcheck h3{
+        font-size:1.5vh;
+        position:absolute;
+        left:250%;
+    }
+
+    
+input[type=checkbox]
+{
+    scale: 1;
+}
+
+#rightcheck h3{
+    font-size: 1.5vh;
+
+}
+
+#loginbutton a{
+    font-size: 2vh;
+}
+
+#googlebutton{
+    
+    text-align: center;
+    /* background-color: red; */
+}
+#googlebutton>a{
+    font-size: 2vh;
+
+}
+#googlebutton i{
+    font-size: 3vh;
+}
+
+}
+
+@media(max-width:768px){
+    #login{
+        flex-direction: column-reverse;
+        width: 90%;
+        height:75%;
+
+    }
+    #loginright{
+        width: 100%;
+        background-size: cover;
+        background-position: 0px;
+        /* background-position-y: 2vh; */
+        height: 50%;
+
+    }
+    #loginleft{
+        width: 100%;
+        padding: 4vh;
+        gap: .5vh;
+        justify-content: start;
+    }
+    #loginleft h1{
+        font-size: 2vh;
+    }
+    .inputfield{
+        height: 7vh;
+    }
+    
+
+    #buttons{
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    #signupreference{
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.4vh;
+        text-align: center;
+
+    }
+
+    #nav{
+        position: absolute;
+        top: 0;
+        padding: 0vh 3vh;
+    }
+
+    #nav h2{
+        font-size: 1.5vh;
+    }
+
+    #rightbuttons{
+        gap: 1.3vh;
+    }
+
+    #nav a{
+        font-size: 1vh;
+        
+    }
+    #buttons{
+        width: 100%;
+    }
+
+
+    #loginleft input{
+        height: 6vh;
+
+    }
+
+    .inputfield p{
+        font-size: 2vh;
+    }
+
+   #leftcheck{
+    position: relative;
+    left: 3%;
+   }
+
+    #leftcheck h3{
+        font-size:1.5vh;
+        position:absolute;
+        left:250%;
+    }
+
+    
+input[type=checkbox]
+{
+    scale: 1;
+}
+
+#rightcheck h3{
+    font-size: 1.5vh;
+
+}
+
+#loginbutton a{
+    font-size: 2vh;
+}
+
+#googlebutton{
+    text-align: center;
+}
+#googlebutton a{
+    font-size: 2vh;
+}
+    
+    
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+<div class="min-h-screen flex items-center justify-center">
+
+    <!-- Dashboard -->
+    <div class="w-full md:w-3/4 bg-white rounded-lg shadow-lg overflow-hidden">
+        <!-- Dashboard Header -->
+        <div class="bg-gray-800 text-white py-4 px-6">
+            <h2 class="text-xl font-semibold">Welcome to Your Dashboard</h2>
+            <p class="text-sm">Manage your account</p>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div class="px-6 py-8 space-y-4 md:px-10 lg:px-12 xl:px-16">
+            <!-- Account Info & Recent Transactions -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Account Information -->
+                <div>
+                    <h3 class="text-lg font-semibold">Account Information</h3>
+                    <p class="mt-2 text-gray-700">Name: John Doe</p>
+                    <p class="mt-1 text-gray-700">Account Number: XXXXXXXXX</p>
+                    <p class="mt-1 text-gray-700">Balance: $XXXX.XX</p>
+                </div>
+                <!-- Recent Transactions -->
+                <div>
+                    <h3 class="text-lg font-semibold">Recent Transactions</h3>
+                    <ul class="mt-2">
+                        <li class="flex justify-between">
+                            <span class="text-gray-700">12/06/2024 - Payment to Acme Inc.</span>
+                            <span class="text-gray-700">$XX.XX</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-700">11/06/2024 - Deposit from XYZ Bank</span>
+                            <span class="text-gray-700">$XX.XX</span>
+                        </li>
+                        <!-- Add more transactions here -->
+                    </ul>
+                </div>
+            </div>
+            <!-- Payment for Product -->
+            <div class="flex justify-center">
+                <div class="w-full md:w-3/4 lg:w-1/2 bg-gray-200 rounded-lg p-6 space-y-4">
+                    <h3 class="text-lg font-semibold">Make a Payment</h3>
+                    <p class="mt-2 text-gray-700">You are making a payment for:</p>
+                    <div class="mt-2 text-gray-700">Product Name: Product Name</div>
+                    <div class="mt-1 text-gray-700">Price: $XX.XX</div>
+                    <button class="w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Pay Now</button>
+                </div>
+            </div>
+            <!-- Logout Button -->
+            <div>
+                <button class="w-full bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700">Logout</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
