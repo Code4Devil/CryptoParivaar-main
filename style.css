@@ -65,7 +65,7 @@ html,body{
     flex-direction: column;
     align-items:center;
     justify-content:space-evenly;
-    height: 55vh;
+    height: 35vh;
     width: 6vw;
     /* background-color: red; */
     position: fixed;
